@@ -22,7 +22,6 @@ console.log(varconstante);
 console.log("Condicionales");
 
 // condicional if
-
 var edad = 17;
 
 if(edad<18){
@@ -34,7 +33,6 @@ if(edad<18){
 }
 
 // condicional swicth
-
 var dia = 1;
 
 switch(dia){
