@@ -1,6 +1,6 @@
 console.log("Bucles");
 
-console.log("Bucles controlados")
+console.log("Bucles controlados");
 // For sirve para poder repetir un bucle una cantidad de veces definida
 console.log("For");
 console.log("For incremento");

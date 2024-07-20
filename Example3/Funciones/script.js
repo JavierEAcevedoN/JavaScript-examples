@@ -24,7 +24,7 @@ const suma4 = (a,b) => a+b;
 console.log(suma4(15,223));
 
 // si la funcion solo tiene un parametro no se utiliza los parantesis
-const saludo = saludo => saludo + "!"
+const saludo = saludo => saludo + "!";
 console.log("Javier");
 
 //funciones autoejecutables
