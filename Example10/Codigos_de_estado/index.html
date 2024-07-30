@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Códigos de estado</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Códigos de estado</h1>
+        <section class="200">
+            <h2>200 (ok)</h2>
+            <h3>Descripcion</h3>
+            <p>
+                El HTTP <mark>200 OK</mark> El código de respuesta a la
+                situación indica que la solicitud ha tenido éxito. Una respuesta
+                de 200 es caché por defecto.
+            </p>
+            <p>
+                El significado de un éxito depende del método de solicitud HTTP:
+            </p>
+            <ul>
+                <li>
+                    <mark>GET:</mark> El recurso ha sido buscado y se transmite
+                    en el cuerpo del mensaje.
+                </li>
+                <li>
+                    <mark>HEAD:</mark> Las cabeceras de representación están
+                    incluidas en la respuesta sin ningún cuerpo de mensaje
+                </li>
+                <li>
+                    <mark>POST:</mark> El recurso que describe el resultado de
+                    la acción se transmite en el cuerpo del mensaje
+                </li>
+                <li>
+                    <mark>TRACE:</mark> El cuerpo del mensaje contiene el
+                    mensaje de solicitud tal como fue recibido por el servidor.
+                </li>
+            </ul>
+            <p>
+                El resultado exitoso de una PUTa DELETEA menudo no es una 200
+                OKpero a 204 No Content(o a 201 Createdcuando el recurso se suba
+                por primera vez).
+            </p>
+        </section>
+        <section class="304">
+            <h2>304 (No modificado)</h2>
+            <h3>Descripcion</h3>
+            <p>
+                El HTTP <mark>304 Not Modified</mark> respuesta de redirección
+                del cliente El código indica que no es necesario volver a
+                transmitir los recursos solicitados. Es un redirección implícita
+                a un recurso en caché. Esto sucede cuando el método de solicitud
+                es un método seguro, como <mark>GET</mark> o <mark>HEAD</mark>,
+                o cuando la solicitud esté condicionada y utilice una
+                <mark>If-None-Match</mark> a
+                <mark>If-Modified-Since</mark> cabecera.
+            </p>
+            <p>
+                La respuesta no debe contener un cuerpo y debe incluir las
+                cabeceras que han sido enviados en un equivalente
+                <mark>200 OK</mark> respuesta: <mark>Cache-Control</mark>,
+                <mark>Content-Location</mark>, <mark>Date</mark>,
+                <mark>ETag</mark>, <mark>Expires</mark>, y <mark>Vary</mark>.
+            </p>
+        </section>
+    </body>
+</html>
