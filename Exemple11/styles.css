@@ -1,0 +1,65 @@
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: black;
+}
+div.con_peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+div.con_peliculas div.pelicula:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    color: #ff8225;
+    z-index: 1;
+}
+div.con_peliculas div.pelicula img {
+    height: 500px;
+    border-radius: 15px;
+}
+div.con_peliculas div.pelicula h3 {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+div.botones {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    bottom: 0px;
+    justify-content: center;
+    z-index: 2;
+}
+div.botones button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #ff8225;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 334px) {
+    body {
+        font-size: 5.5vw;
+        word-wrap: break-word;
+    }
+    div.con_peliculas {
+        display: flex;
+        flex-direction: column;
+    }
+    div.con_peliculas div.pelicula img {
+        max-width: 500px;
+        width: 100vw;
+        height: auto;
+    }
+    div.botones {
+        flex-direction: column;
+    }
+    div.botones button {
+        font-size: 5vw;
+        margin: 5px 0px;
+    }
+}
