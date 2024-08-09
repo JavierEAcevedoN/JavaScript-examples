@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+}
+div#mi_div {
+    display: flex;
+    flex-wrap: wrap;
+}
+div#mi_div div img {
+    width: 100px;
+}
