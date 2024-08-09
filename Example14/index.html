@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>event</title>
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <h1>event</h1>
+        <button onclick="mostrarAlerta()">Click Me</button>
+        <!-- El atributo onclick de un boton indica que cuando se le de click al boton ejecute una funcion -->
+        <input
+            type="text"
+            placeholder="Ingresa texto"
+            id="intext"
+            onchange="mostrarAlerta2()"
+        />
+        <!-- El atributo onchange de un boton que cuando se modifique algun texto dentro del input ejecute una funcion -->
+        <img
+            style="width: 100px"
+            src="https://files.prineside.com/static/infinitode_website/originals/media_org_logo.png"
+            alt="Infinitode_2_Icon"
+            onmouseover="mostrarAlerta3()"
+        />
+        <!-- El atributo onmouseover de una imagen indica que cuando el mouse pase sobre la imagen ejecute una función -->
+        <button id="btn">Click me</button>
+        <button id="btn2">Click me</button>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>onclick</title>
+    </head>
+    <body>
+        <h1>onclick</h1>
+        <button id="btn">Click me</button>
+        <script>
+            const btn = document.getElementById("btn");
+            btn.setAttribute("onclick", "alerta()");
+            const alerta = () => {
+                alert("Botón clickeado");
+            };
+        </script>
+    </body>
+</html>
